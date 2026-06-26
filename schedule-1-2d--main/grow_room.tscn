@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://wu0s7nt73xnk"]
+
+[ext_resource type="Script" uid="uid://blakd2h4ea6ii" path="res://grow_room.gd" id="1_g35y8"]
+[ext_resource type="Texture2D" uid="uid://clojn5e17fhcj" path="res://Plant/Pot.png" id="1_qs1vy"]
+[ext_resource type="Texture2D" uid="uid://bx5b5v0omgf6q" path="res://Plant/Seed-Tiny.png" id="3_3syih"]
+[ext_resource type="Texture2D" uid="uid://deogpuryfysoe" path="res://Plant/cam.png" id="5_276dk"]
+[ext_resource type="Script" uid="uid://b0ruqng22tjor" path="res://plant.gd" id="6_276dk"]
+[ext_resource type="Script" uid="uid://cp0utuml305up" path="res://watering_can.gd" id="6_fchgr"]
+
+[node name="GrowRoom" type="Node2D" unique_id=746329490]
+script = ExtResource("1_g35y8")
+
+[node name="Pot" type="Sprite2D" parent="." unique_id=786272980]
+position = Vector2(603, 408)
+scale = Vector2(0.30500004, 0.30500004)
+texture = ExtResource("1_qs1vy")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=898814540]
+
+[node name="Bars" type="VBoxContainer" parent="UI" unique_id=467985448]
+offset_left = 506.0
+offset_top = 508.0
+offset_right = 706.0
+offset_bottom = 566.0
+
+[node name="WaterBar" type="ProgressBar" parent="UI/Bars" unique_id=2096732490]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="GrowthBar" type="ProgressBar" parent="UI/Bars" unique_id=2034506971]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="WateringCan" type="Sprite2D" parent="." unique_id=1795341064]
+position = Vector2(1168, 421)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_276dk")
+script = ExtResource("6_fchgr")
+
+[node name="Plant" type="Sprite2D" parent="." unique_id=1048840484]
+position = Vector2(602, 318.99997)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_3syih")
+script = ExtResource("6_276dk")
+
+[node name="Buds" type="Node2D" parent="." unique_id=1136746692]
