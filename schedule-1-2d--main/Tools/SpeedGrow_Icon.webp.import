@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c54lcmfkrdbth"
-path="res://.godot/imported/Seed-Small.png-649981867c7b10cb6efc898226f18401.ctex"
+uid="uid://dlmmewntyx05j"
+path="res://.godot/imported/SpeedGrow_Icon.webp-d2857eeb08a0c7900115e4c0501b19bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Plant/Seed-Small.png"
-dest_files=["res://.godot/imported/Seed-Small.png-649981867c7b10cb6efc898226f18401.ctex"]
+source_file="res://Tools/SpeedGrow_Icon.webp"
+dest_files=["res://.godot/imported/SpeedGrow_Icon.webp-d2857eeb08a0c7900115e4c0501b19bd.ctex"]
 
 [params]
 

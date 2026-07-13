@@ -6,38 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://deogpuryfysoe" path="res://Plant/cam.png" id="5_276dk"]
 [ext_resource type="Script" uid="uid://cp0utuml305up" path="res://watering_can.gd" id="6_fchgr"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3syih"]
-bg_color = Color(0.16697282, 0.5076085, 0.857929, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 1
-corner_radius_top_right = 1
-corner_radius_bottom_right = 1
-corner_radius_bottom_left = 1
-corner_detail = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t7kmy"]
-bg_color = Color(0.096652694, 0.23640579, 0.5782137, 0.7607843)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_276dk"]
-bg_color = Color(0.28367248, 0.581779, 0.14106876, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 1
-corner_radius_top_right = 1
-corner_radius_bottom_right = 1
-corner_radius_bottom_left = 1
-corner_detail = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yhpmn"]
-bg_color = Color(0.039215688, 0.23529412, 0, 0.7607843)
-
 [node name="GrowRoom" type="Node2D" unique_id=746329490]
 script = ExtResource("1_g35y8")
 
@@ -57,16 +25,10 @@ offset_bottom = 566.0
 [node name="WaterBar" type="ProgressBar" parent="UI/Bars" unique_id=2096732490]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_styles/background = SubResource("StyleBoxFlat_3syih")
-theme_override_styles/fill = SubResource("StyleBoxFlat_t7kmy")
 
 [node name="GrowthBar" type="ProgressBar" parent="UI/Bars" unique_id=2034506971]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_styles/background = SubResource("StyleBoxFlat_276dk")
-theme_override_styles/fill = SubResource("StyleBoxFlat_yhpmn")
 
 [node name="Plant" type="Sprite2D" parent="." unique_id=1048840484]
 position = Vector2(602, 318.99997)

@@ -32,7 +32,7 @@ func _process(delta):
 		if abs(rotation_degrees) > 60.0:
 			var distance = position.distance_to(grow_room.plant.position)
 			if distance < 200.0:
-				grow_room.water_level += 5 * delta
+				grow_room.water_level += 10 * delta
 				grow_room.water_level = clamp(grow_room.water_level, 0, 100)
 	else:
 		rotation_degrees = lerp(rotation_degrees, 0.0, delta * 2.0)
