@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c4k27nuwqimka"]
+
+[ext_resource type="Script" uid="uid://bppbxmfq0sc4a" path="res://Plant/bud.gd" id="1_t220q"]
+[ext_resource type="Texture2D" uid="uid://db2nwt0dp30ol" path="res://Plant/Bud.webp" id="2_fwu60"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dsyr7"]
+radius = 424.56973
+
+[node name="Area2D" type="Area2D" unique_id=1171239866]
+scale = Vector2(0.05, 0.05)
+script = ExtResource("1_t220q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=713936693]
+texture = ExtResource("2_fwu60")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1775097074]
+scale = Vector2(1.209299, 1.8068948)
+shape = SubResource("CircleShape2D_dsyr7")
